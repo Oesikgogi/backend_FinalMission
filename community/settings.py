@@ -48,7 +48,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['13.211.36.44', 'iambabo.store', '127.0.0.1']
+ALLOWED_HOSTS = ['https://port-0-backend-finalmission-lyeihcjm2e996a0b.sel5.cloudtype.app', '127.0.0.1']
 
 
 # Application definition
@@ -115,7 +115,7 @@ DATABASES = {
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
-        'PORT': 3306,
+        'PORT': config('DB_PORT'),
     }
 }
 
